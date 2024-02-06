@@ -45,18 +45,10 @@ const todos = (state = initialState, action) => {
       }; //TODO: 여기 작성
 
     case 'DELETE_TODO':
-      return {
-        ...state,
-        todos: state.todos.filter((todo) => todo.id !== action.payload),
-      }; //TODO: 여기 작성
+      return {}; //TODO: 여기 작성
 
     case 'SWITCH_TODO':
-      return {
-        ...state,
-        todos: state.todos.map((todo) =>
-          todo.id === action.payload ? { ...todo, isDone: !todo.isDone } : todo
-        ),
-      }; //TODO: 여기 작성
+      return {}; //TODO: 여기 작성
 
     default:
       return state;
